@@ -35,9 +35,17 @@ const Navbar = () => {
     },
   }
 
+  const navbarFlex = {
+    width: '100%',
+    maxWidth: '1280px',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    margin: 'auto',
+  }
+
   return (
     <Flex sx={layout}>
-      <Flex width="100%" alignItems="center" justifyContent="space-between">
+      <Flex sx={navbarFlex}>
         <Box width="50%">
           <Text sx={menuTitle}>Apicha On-amphai</Text>
         </Box>
